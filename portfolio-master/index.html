@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div>
+        <div class="height">
+            <nav class="nav">
+                <p class="logo">Daya</p>
+                <ul class="nav-list">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <section class="about">
+                <p class="p1">Hi, my name is</p>
+                <p class="p2">Daya Shankar Baniya.</p>
+                <p class="p3">I build things for the web.</p>
+                <p class="p4">As a highly motivated and driven individual, I am seeking a frontend developer role that allows me to continue my passion for learning about new technologies while leveraging my problem-solving skills to deliver innovative solutions.</p>
+                <button onclick="location.href='https://drive.google.com/file/d/1HcM2s_yxtZOO20FPcDOlyClrWtJhBBm4/view?usp=sharing'" class="resume-btn">Check out my resume !</button>
+            </section>
+        </div>
+    
+        <div class="temp">
+            <p class="main-title">About</p>
+            <div class="main">
+                <div class="left">
+                I am a fourth year student at Veltech University in Chennai studying Information Technology. I have experience developing and designing software for the web, from simple landing pages to progressive web applications. I strive to create software that not only functions efficiently under the hood, but also provides intuitive, pixel-perfect user experiences. I love learning new and better ways to create seamless user experiences with clean, efficient, and scalable code. I consider work an ongoing education, and I am always looking for opportunities to work with those who are willing to share their knowledge as much as I want to learn. At the end of the day, my primary goal is to create something beautiful with people that bring out the best in me.
+                </div>
+                <div class="right">
+                    <img class="image" src="daya.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="skills">
+            <p class="skills-title">Skills</p>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React.js</li>
+                <li>MySQL</li>
+                <li>Java</li>
+            </ul>
+        </div>
+        <div class="projects">
+            <p class="project-title">Projects</p>
+            <div class="sub-project">
+            <button><a href="https://dayacounter.netlify.app/">Counter App</a></button>
+            <button><a href="https://dayaweather.netlify.app/">Weather App</a></button>
+            <button><a href="https://dayanotes.netlify.app/">Notes App</a></button>
+            </div>
+            
+        </div>
+        <div class="contact">
+            <div class="contact-left">
+                <p class="mail">Mail: dayashankarbaniya171@gmail.com</p>
+                <p class="phone">Phone: 7845611054</p>
+            </div>
+            <ul>
+                <li><a href="linkedin.com">LinkedIn</a></li>
+                <li><a href="twitter.com">Twitter</a></li>
+            </ul>
+        </div>
+        <div class="counter">
+            <h1>0</h1>
+            <button class="incr">Click to Increment</button>
+            <button class="decr">Click to Decrement</button>
+
+        </div>
+    </div>
+    <script>
+        const counterDisplay = document.querySelector(".counter h1");
+        const incrementButton = document.querySelector(".counter .incr");
+        const decrementButton = document.querySelector(".counter .decr");
+    
+        let count = 0;
+
+        if(count<0){
+            return;
+        }
+        incrementButton.addEventListener("click", () => {
+            count++;
+    
+            counterDisplay.textContent = count;
+        });
+    
+        decrementButton.addEventListener("click", () => {
+            count--;
+    
+            counterDisplay.textContent = count;
+        });
+    </script>
+</body>
+</html>
